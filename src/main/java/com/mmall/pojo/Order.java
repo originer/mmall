@@ -41,21 +41,4 @@ public class Order {
 
     private Date updateTime;
 
-    public Order(Integer id, Long orderNo, Integer userId, Integer shippingId, BigDecimal payment, Integer paymentType, Integer postage, Integer status, Date paymentTime, Date sendTime, Date endTime, Date closeTime, Date createTime, Date updateTime) {
-        this.id = id;
-        this.orderNo = orderNo;
-        this.userId = userId;
-        this.shippingId = shippingId;
-        this.payment = payment;
-        this.paymentType = paymentType;
-        this.postage = postage;
-        this.status = status;
-        this.paymentTime = paymentTime;
-        this.sendTime = sendTime;
-        this.endTime = endTime;
-        this.closeTime = closeTime;
-        this.createTime = createTime;
-        this.updateTime = updateTime;
-    }
-
 }
