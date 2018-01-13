@@ -46,7 +46,7 @@ public class CookieUtil {
         return null;
     }
 
-    public static void delLoginToken(HttpServletRequest request,HttpServletResponse response) {
+    public static void delLoginToken(HttpServletRequest request, HttpServletResponse response) {
         Cookie[] cks = request.getCookies();
 
         if (cks != null) {
@@ -56,7 +56,7 @@ public class CookieUtil {
                     ck.setPath("/");
                     ck.setMaxAge(0);//设置为0，代表删除此cookie
                     response.addCookie(ck);
-                    return ;
+                    return;
                 }
             }
         }

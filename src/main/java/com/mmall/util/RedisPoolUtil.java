@@ -42,6 +42,7 @@ public class RedisPoolUtil {
 
     /**
      * 设置key的有效期，单位是秒
+     *
      * @param key
      * @param exTime
      * @return
@@ -103,9 +104,9 @@ public class RedisPoolUtil {
 
         log.info(value);
 
-        RedisPoolUtil.setEx("ex","ex",60);
+        RedisPoolUtil.setEx("ex", "ex", 60);
 
-        RedisPoolUtil.expire("keySet",10);
+        RedisPoolUtil.expire("keySet", 10);
 
         RedisPoolUtil.del("keySet");
     }

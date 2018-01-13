@@ -16,8 +16,9 @@ public class Const {
 
 
     public static interface RedisCacheExtime {
-        int REDIS_SESSION_EXTIME = 60*30; //30min
+        int REDIS_SESSION_EXTIME = 60 * 30; //30min
     }
+
     public interface ProductListOrderBy {
         Set<String> PRICE_ASC_DESC = Sets.newHashSet("price_desc", "price_asc");
     }
