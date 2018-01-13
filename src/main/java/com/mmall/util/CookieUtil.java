@@ -19,6 +19,7 @@ public class CookieUtil {
         Cookie ck = new Cookie(COOKIE_NAME, token);
         ck.setDomain(COOKIE_DOMAIN);
         ck.setPath("/");//代表设置在根目录
+        ck.setHttpOnly(true);//不许通过脚本访问cookie
 
         //单位是秒
         //如果不设置的话，cookie就不会写入硬盘，而是写入内存，只在当前页面有效
@@ -45,7 +46,7 @@ public class CookieUtil {
         return null;
     }
 
-    public static void delLoginToken(HttpServletResponse response, HttpServletRequest request) {
+    public static void delLoginToken(HttpServletRequest request,HttpServletResponse response) {
         Cookie[] cks = request.getCookies();
 
         if (cks != null) {
