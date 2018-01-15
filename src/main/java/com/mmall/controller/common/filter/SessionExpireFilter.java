@@ -1,4 +1,4 @@
-package com.mmall.controller.common;
+package com.mmall.controller.common.filter;
 
 import com.mmall.common.Const;
 import com.mmall.pojo.User;

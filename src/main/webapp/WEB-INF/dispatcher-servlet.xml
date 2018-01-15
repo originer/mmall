@@ -42,5 +42,13 @@
         <property name="defaultEncoding" value="UTF-8"></property>
     </bean>
 
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!--/*  /manager/a.do拦截路径下的所有结点-->
+            <!--/** /manager/product/a.do拦截路径下包括子路径的所有结点-->
+            <mvc:mapping path="/manage/**"/>
+            <bean class="com.mmall.controller.common.interceptor.AuthorityInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 </beans>
