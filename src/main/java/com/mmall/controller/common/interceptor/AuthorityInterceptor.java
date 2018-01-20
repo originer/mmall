@@ -25,7 +25,7 @@ import java.util.Map;
  **/
 
 /**
- * 拦截器
+ * 管理员权限全局拦截器
  */
 @Slf4j
 public class AuthorityInterceptor implements HandlerInterceptor {

@@ -17,7 +17,7 @@ public class Const {
     public static final String TOKEN_PREFIX = "token_";
 
 
-    public static interface RedisCacheExtime {
+    public  interface RedisCacheExtime {
         int REDIS_SESSION_EXTIME = 60 * 30; //30min
     }
 
@@ -153,5 +153,8 @@ public class Const {
 
     }
 
+    public interface REDIS_LOCK {
+        String CLOSE_ORDER_TASK_LOCK = "CLOSE_ORDER_TASK_LOCK"; //关闭订单的分布式锁
+    }
 
 }

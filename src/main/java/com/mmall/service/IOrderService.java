@@ -36,5 +36,6 @@ public interface IOrderService {
 
     ServerResponse<String> manageSendGoods(Long orderNo);
 
-
+    //hour个小时内未付款的订单，自动关闭
+    void closeOrder(int hour);
 }
